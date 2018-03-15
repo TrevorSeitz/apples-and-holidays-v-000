@@ -38,7 +38,7 @@ def add_supply_to_memorial_day(holiday_hash, supply)
   hash1 = holiday_hash[:spring]
   # hash1.each do |holiday, supplies|
   #   supplies << supply
-  has1[:memorial_day] << supply
+  hash1[:memorial_day] << supply
   end
 end
 
