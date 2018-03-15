@@ -44,7 +44,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   # code here
   # remember to return the updated hash
   hash1 = holiday_hash[season]
-  hash1.merge! {holiday_name => supply_array}
+  hash1.merge!(holiday_name, supply_array)
   # hash2 = holiday_name => supply_array
   # hash1 << holiday_name
   # hash2 << supply_array
