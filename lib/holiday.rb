@@ -79,6 +79,8 @@ def all_holidays_with_bbq(holiday_hash)
     hash1.each do |holiday, supplies|
       if suppiles.includes("BBQ")
         array << holiday
+      end
+    end  
   end
   array.flatten
 
