@@ -33,7 +33,7 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
   # hash2 << supply
   # hash3 << supply
   hash1.each do |holiday|
-    holday << supply
+    holiday << supply
   end
 end
 
