@@ -36,8 +36,6 @@ def add_supply_to_memorial_day(holiday_hash, supply)
   # again, holiday_hash is the same as the ones above
   # add the second argument to the memorial day array
   hash1 = holiday_hash[:spring]
-  # hash1.each do |holiday, supplies|
-  #   supplies << supply
   hash1[:memorial_day] << supply
   # end
 end
@@ -45,7 +43,9 @@ end
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   # code here
   # remember to return the updated hash
-
+  hash1 = holiday_hash[season]
+  hash1.merge!(holiday_name: supply_array)
+holiday_hash
 end
 
 def all_winter_holiday_supplies(holiday_hash)
